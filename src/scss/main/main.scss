@@ -4,10 +4,10 @@
 @import './news.scss';
 
 .main {
-    padding: 64px 0;
-    font-family: sans-serif;
-    background: #f5f5f5;
-    border-bottom: 2px solid black;
+    padding: 32px 0 64px;
+    background: $bg_color_secondary;
+    border-bottom: 2px solid $txt_color;
+    font-family: "Racama", sans-serif;
 
     @media screen and (max-width: 768px) {
         padding: 32px 0;

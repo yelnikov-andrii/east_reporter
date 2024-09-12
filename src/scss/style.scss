@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
+@import './fonts.scss';
+@import './vars.scss';
 @import './header.scss';
 @import './main/main.scss';
 @import './footer.scss';
 
 body {
     margin: 0;
+    font-family: 'Racama sans-serif';
 }
 
 * {

@@ -4,10 +4,11 @@
     box-sizing: border-box;
     display: flex;
     gap: 8px;
-    font-size: 24px;
+    font-size: 28px;
     text-transform: uppercase;
-    background: black;
-    color: white;
+    background: $txt_color;
+    color: $bg_color_main;
+    font-family: "Pobeda", sans-serif;
 
     @media screen and (max-width: 768px) {
       font-size: 18px;

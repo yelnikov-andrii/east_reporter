@@ -1,13 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+@font-face {
+  font-family: "Racama";
+  src: url("../fonts/Racama.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pobeda";
+  src: url("../fonts/pobeda-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pobeda";
+  src: url("../fonts/pobeda-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
 .header {
   padding: 10px 0;
   border-bottom: 2px solid black;
-  font-family: "Unbounded", sans-serif;
+  font-family: "Pobeda", sans-serif;
   position: relative;
   height: 60px;
 }
 .header__logo {
   font-size: 28px;
+  font-weight: 600;
   text-decoration: none;
   color: black;
 }
@@ -28,6 +47,7 @@
     display: flex;
     width: 40px;
     flex-direction: column;
+    justify-content: space-around;
     gap: 8px;
   }
   .header__toggle.active .header__toggle-span:nth-child(1) {
@@ -55,7 +75,7 @@
 
 .header-list {
   display: flex;
-  gap: 30px;
+  gap: 64px;
   align-items: center;
   margin: 0;
   list-style: none;
@@ -63,7 +83,7 @@
 }
 @media screen and (max-width: 1024px) {
   .header-list {
-    gap: 16px;
+    gap: 32px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -73,8 +93,9 @@
   .header-list.active {
     display: flex;
     padding: 20px 0;
-    background: white;
+    background: #ffffff;
     flex-direction: column;
+    align-items: center;
     position: absolute;
     left: 0;
     right: 0;
@@ -83,27 +104,121 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
+.header-list__item {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .header-list__item.active .header-list__svg.header-list__svg--plus {
+    display: none;
+  }
+  .header-list__item.active .header-list__svg.header-list__svg--minus {
+    display: inline-block;
+  }
+  .header-list__item .header-list__svg.header-list__svg--minus {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .header-list__item .header-list__svg.header-list__svg--minus {
+    display: none;
+  }
+}
+.header-list__wrapper-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .header-list__wrapper-link:hover > .header-list__link {
+    color: #0247ad;
+  }
+  .header-list__wrapper-link:hover .header-list__svg {
+    color: #0247ad;
+  }
+  .header-list__wrapper-link:hover ~ .dropdown {
+    max-height: 400px;
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .header-list__wrapper-link:hover ~ .dropdown {
+    padding: 10px;
+  }
+}
 .header-list__link {
-  font-size: 14px;
+  font-size: 22px;
+  font-weight: 600;
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .header-list__link:hover {
-  color: blue;
+  color: #0247ad;
 }
 @media screen and (max-width: 1024px) {
   .header-list__link {
-    font-size: 13px;
+    font-size: 20px;
+    justify-content: center;
   }
+}
+
+.dropdown {
+  display: flex;
+  max-height: 0px;
+  overflow: hidden;
+  transform-origin: top;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 2;
+  width: max-content;
+}
+@media screen and (min-width: 768px) {
+  .dropdown:hover {
+    max-height: 400px;
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .dropdown {
+    box-shadow: none;
+    position: relative;
+    padding: 0px;
+  }
+  .dropdown.active {
+    max-height: 400px;
+    transform: scale(1);
+    padding: 10px;
+  }
+}
+.dropdown__item:hover > .header-list__link {
+  color: #0247ad;
 }
 
 .top {
   padding: 32px 0 64px;
 }
 .top__container.container {
-  max-width: 992px;
+  max-width: 1200px;
 }
 .top__input {
   padding: 5px 10px;
@@ -116,7 +231,7 @@
 }
 .top__block {
   padding: 20px;
-  background: white;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -133,7 +248,7 @@
   background-position: center;
   padding: 80px 32px 64px;
   border-radius: 4px;
-  color: white;
+  color: #ffffff;
   display: flex;
   min-height: 390px;
   flex-direction: column;
@@ -148,7 +263,7 @@
 .top__h2 {
   font-size: 42px;
   font-weight: 700;
-  color: white;
+  color: #ffffff;
   margin: 0 0 16px 0;
 }
 .top__p {
@@ -157,7 +272,7 @@
 .top__button {
   border: none;
   outline: none;
-  background-color: white;
+  background-color: #ffffff;
   color: black;
   padding: 10px 5px;
   cursor: pointer;
@@ -211,6 +326,7 @@
   text-transform: uppercase;
   font-size: 32px;
   font-weight: 600;
+  font-family: "Pobeda", sans-serif;
 }
 @media screen and (max-width: 425px) {
   .important__title {
@@ -243,7 +359,7 @@
 .important__banner {
   padding: 20px;
   background: black;
-  color: white;
+  color: #ffffff;
   width: 60%;
   font-size: 36px;
   font-weight: 700;
@@ -268,7 +384,7 @@
   display: inline-block;
   margin: 60px 0 0 0;
   text-align: right;
-  font-family: "Unbounded", sans-serif;
+  font-family: "Racama", sans-serif;
   font-size: 36px;
 }
 
@@ -278,10 +394,11 @@
   box-sizing: border-box;
   display: flex;
   gap: 8px;
-  font-size: 24px;
+  font-size: 28px;
   text-transform: uppercase;
   background: black;
-  color: white;
+  color: #ffffff;
+  font-family: "Pobeda", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .marquee {
@@ -306,9 +423,10 @@
   padding: 64px 0;
 }
 .news__title {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: "Pobeda", sans-serif;
 }
 .news__block {
   display: flex;
@@ -334,10 +452,10 @@
 }
 
 .main {
-  padding: 64px 0;
-  font-family: sans-serif;
+  padding: 32px 0 64px;
   background: #f5f5f5;
   border-bottom: 2px solid black;
+  font-family: "Racama", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .main {
@@ -382,6 +500,7 @@
 
 body {
   margin: 0;
+  font-family: "Racama sans-serif";
 }
 
 * {
