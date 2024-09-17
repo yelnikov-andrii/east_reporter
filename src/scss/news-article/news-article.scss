@@ -1,3 +1,5 @@
+@import './nav.scss';
+
 .news-article {
     padding: 32px 0 64px;
     background: $bg_color_secondary;
@@ -66,12 +68,16 @@
         justify-content: space-between;
     }
 
-    &__article {
+    &__article-wrapper {
         width: 68%;
+    }
+
+    &__article {
         background: $bg_color_main;
         padding: 16px 32px;
         border-radius: 4px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        margin: 0 0 32px 0;
     }
 
     &__h1 {
@@ -101,13 +107,13 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
         &-block {
-            margin: 0 0 64px 0;
+            margin: 0 0 128px 0;
         }
     }
 
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 16px;
     }
 }

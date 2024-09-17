@@ -21,6 +21,11 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    color: $txt_color;
+    text-decoration: none;
+}
+
 .container {
     max-width: 1370px;
     margin: 0 auto;

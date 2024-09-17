@@ -145,27 +145,50 @@
             </div>
 
             <div class="news-article__block">
-                <article class="news-article__article">
-                    <h1 class="news-article__h1">
-                        Article title
-                    </h1>
-                    <img class="news-article__img" src="./src/images/camera.jpg" />
-                    <p class="news-article__p">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus iusto aut consectetur
-                        asperiores exercitationem molestias numquam doloribus nisi, ducimus enim cumque commodi laborum
-                        corrupti esse obcaecati incidunt tempore! Culpa quibusdam provident doloremque quas, et optio
-                        vitae pariatur quos deleniti molestias, adipisci vel, dolore eius explicabo eos ut voluptatibus
-                        blanditiis inventore?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque optio sint culpa officia eveniet
-                        dolor sit libero accusamus ab, nesciunt voluptatibus, harum aperiam cumque deserunt atque at
-                        earum, fugit nemo. Ex, labore vitae a aliquam voluptate porro asperiores ea laboriosam cum
-                        ratione. Ut quasi obcaecati, laudantium numquam veritatis maxime nostrum itaque ducimus magnam
-                        aliquid nobis voluptates voluptatem animi officiis eos officia fuga? Possimus nobis recusandae
-                        odit saepe dolore ex doloremque dolores officia minus rem, nesciunt dicta, eligendi cum
-                        inventore! Repellendus vel eos ab, minima blanditiis quaerat doloribus fuga cum laboriosam fugit
-                        dolor aperiam totam voluptates consequuntur quam eaque, ut vero.
-                    </p>
-                </article>
+                <div class="news-article__article-wrapper">
+                    <article class="news-article__article">
+                        <h1 class="news-article__h1">
+                            Article title
+                        </h1>
+                        <img class="news-article__img" src="./src/images/camera.jpg" />
+                        <p class="news-article__p">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus iusto aut consectetur
+                            asperiores exercitationem molestias numquam doloribus nisi, ducimus enim cumque commodi
+                            laborum
+                            corrupti esse obcaecati incidunt tempore! Culpa quibusdam provident doloremque quas, et
+                            optio
+                            vitae pariatur quos deleniti molestias, adipisci vel, dolore eius explicabo eos ut
+                            voluptatibus
+                            blanditiis inventore?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque optio sint culpa officia
+                            eveniet
+                            dolor sit libero accusamus ab, nesciunt voluptatibus, harum aperiam cumque deserunt atque at
+                            earum, fugit nemo. Ex, labore vitae a aliquam voluptate porro asperiores ea laboriosam cum
+                            ratione. Ut quasi obcaecati, laudantium numquam veritatis maxime nostrum itaque ducimus
+                            magnam
+                            aliquid nobis voluptates voluptatem animi officiis eos officia fuga? Possimus nobis
+                            recusandae
+                            odit saepe dolore ex doloremque dolores officia minus rem, nesciunt dicta, eligendi cum
+                            inventore! Repellendus vel eos ab, minima blanditiis quaerat doloribus fuga cum laboriosam
+                            fugit
+                            dolor aperiam totam voluptates consequuntur quam eaque, ut vero.
+                        </p>
+                    </article>
+                    <nav class="news-article__nav news-article-nav">
+                        <a class="news-article-nav__item news-article-nav__item--prev" href="#">
+                                <svg class="news-article-nav__button" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowBackIosIcon"><path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path></svg>
+                            <h2 class="news-article-nav__h2">
+                                Post title here Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi.
+                            </h2>
+                        </a>
+                        <a class="news-article-nav__item news-article-nav__item--next" href="#">
+                            <h2 class="news-article-nav__h2">
+                                Post title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eius.
+                            </h2>
+                                <svg class="news-article-nav__button" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowForwardIosIcon"><path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path></svg>
+                        </a>
+                    </nav>
+                </div>
                 <aside class="news-article__aside">
                     <div class="news-article__aside-block">
                         <h2 class="news-article__h2">
@@ -181,6 +204,7 @@
                                 </svg></button>
                         </div>
                     </div>
+
                     <div class="news-article__aside-block">
                         <h2>
                             Recent posts
@@ -200,8 +224,28 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="news-article__aside-block">
+                        <h2>
+                            Categories
+                        </h2>
+                        <div class="news-article__list">
+                            <a href="#" class="news-article__link news-article__link--aside">
+                                Category 1
+                            </a>
+                            <a href="#" class="news-article__link news-article__link--aside">
+                                Category 2
+                            </a>
+                            <a href="#" class="news-article__link news-article__link--aside">
+                                Category 3
+                            </a>
+                            <a href="#" class="news-article__link news-article__link--aside">
+                                Category 4
+                            </a>
+                        </div>
+                    </div>
+                </aside>
             </div>
-            </aside>
         </div>
 
         </div>
