@@ -4,6 +4,7 @@
     font-family: "Pobeda", sans-serif;
     position: relative;
     height: 60px;
+    background: $bg_color_main;
 
     &__logo {
         font-size: 28px;
@@ -129,6 +130,10 @@
         align-items: center;
         justify-content: center;
 
+        & .header-list__svg {
+            color: $txt_color;
+        }
+
         @media screen and (min-width: 768px) {
             &:hover {
                 &>.header-list__link {
@@ -186,8 +191,8 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: $bg_color_main;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
     list-style: none;
     padding: 10px;
     margin: 0;

@@ -1,9 +1,11 @@
 .main-important {
+    padding: 64px 0 32px;
     
     &__block {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
 
         @media screen and (max-width: 768px) {
             flex-direction: column;
@@ -13,7 +15,10 @@
     &__aside {
         display: flex;
         flex-direction: column;
+        padding: 16px 32px;
         gap: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
 
         @media screen and (max-width: 768px) {
             flex-direction: row;
@@ -65,6 +70,8 @@
         font-size: 36px;
         font-weight: 700;
         text-transform: uppercase;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
 
         @media screen and (max-width: 1200px) {
             font-size: 32px;

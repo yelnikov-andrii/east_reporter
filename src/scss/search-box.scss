@@ -1,0 +1,37 @@
+.search-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &__input {
+        border: none;
+        outline: none;
+        height: 50px;
+        width: 100%;
+        width: 100%;
+        border-radius: 8px;
+        padding: 5px 10px;
+        padding-right: 40px;
+        font-family: 'Racama sans-serif';
+        font-size: 22px;
+    }
+    
+    &__icon {
+        position: absolute;
+        border: none;
+        outline: none;
+        background: transparent;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: $txt_secondary;
+        cursor: pointer;
+        
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+

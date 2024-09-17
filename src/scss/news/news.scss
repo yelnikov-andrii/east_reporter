@@ -81,6 +81,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
               0 6px 20px rgba(0, 0, 0, 0.1);
         padding: 16px 32px;
+        background: $bg_color_secondary;
 
         @media screen and (max-width: 1200px) {
             flex-direction: column;

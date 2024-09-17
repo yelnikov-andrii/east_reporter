@@ -6,10 +6,14 @@
 @import './footer.scss';
 @import './news/news.scss';
 @import './anounces/anounces.scss';
+@import './news-article/news-article.scss';
+@import './search-box.scss';
 
 body {
     margin: 0;
     font-family: 'Racama sans-serif';
+    color: $txt_color;
+    background: $bg_color_main;
 }
 
 * {
