@@ -176,7 +176,10 @@
                     </article>
                     <nav class="news-article__nav news-article-nav">
                         <a class="news-article-nav__item news-article-nav__item--prev" href="#">
-                                <svg class="news-article-nav__button" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowBackIosIcon"><path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path></svg>
+                            <svg class="news-article-nav__button" focusable="false" aria-hidden="true"
+                                viewBox="0 0 24 24" data-testid="ArrowBackIosIcon">
+                                <path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path>
+                            </svg>
                             <h2 class="news-article-nav__h2">
                                 Post title here Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi.
                             </h2>
@@ -185,12 +188,105 @@
                             <h2 class="news-article-nav__h2">
                                 Post title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eius.
                             </h2>
-                                <svg class="news-article-nav__button" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowForwardIosIcon"><path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path></svg>
+                            <svg class="news-article-nav__button" focusable="false" aria-hidden="true"
+                                viewBox="0 0 24 24" data-testid="ArrowForwardIosIcon">
+                                <path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
+                            </svg>
                         </a>
                     </nav>
+                    <h2 class="news-article__h2">
+                        Related posts
+                    </h2>
+                    <div class="news-article__related related-posts">
+                        <a class="related-posts__post" href="#">
+                            <img src="./src/images/bananas.png" class="news-article__img" />
+                            <h2 class="news-article__title related-posts__title">
+                                Some title of article
+                            </h2>
+                            <p>
+                                Date of article
+                            </p>
+                        </a>
+                        <a class="related-posts__post" href="#">
+                            <img src="./src/images/bananas.png" class="news-article__img" />
+                            <h2 class="news-article__title">
+                                Some title of article 2
+                            </h2>
+                            <p>
+                                Date of article 2
+                            </p>
+                        </a>
+                        <a class="related-posts__post" href="#">
+                            <img src="./src/images/bananas.png" class="news-article__img" />
+                            <h2 class="news-article__title related-posts__title">
+                                Some title of article
+                            </h2>
+                            <p>
+                                Date of article
+                            </p>
+                        </a>
+                        <a class="related-posts__post" href="#">
+                            <img src="./src/images/bananas.png" class="news-article__img" />
+                            <h2 class="news-article__title">
+                                Some title of article 2
+                            </h2>
+                            <p>
+                                Date of article 2
+                            </p>
+                        </a>
+                        <a class="related-posts__post" href="#">
+                            <img src="./src/images/bananas.png" class="news-article__img" />
+                            <h2 class="news-article__title related-posts__title">
+                                Some title of article
+                            </h2>
+                            <p>
+                                Date of article
+                            </p>
+                        </a>
+                        <a class="related-posts__post" href="#">
+                            <img src="./src/images/bananas.png" class="news-article__img" />
+                            <h2 class="news-article__title">
+                                Some title of article 2
+                            </h2>
+                            <p>
+                                Date of article 2
+                            </p>
+                        </a>
+                        <a class="related-posts__post" href="#">
+                            <img src="./src/images/bananas.png" class="news-article__img" />
+                            <h2 class="news-article__title related-posts__title">
+                                Some title of article
+                            </h2>
+                            <p>
+                                Date of article
+                            </p>
+                        </a>
+                        <a class="related-posts__post" href="#">
+                            <img src="./src/images/bananas.png" class="news-article__img" />
+                            <h2 class="news-article__title">
+                                Some title of article 2
+                            </h2>
+                            <p>
+                                Date of article 2
+                            </p>
+                        </a>
+                    </div>
+                    <h2 class="news-article__h2">
+                        Comment this post
+                    </h2>
+                    <form class="news-article__form news-article-form">
+                        <label for="comment" class="news-article-form__label">
+                            Write your comment
+                        </label>
+                        <textarea class="news-article-form__textarea" id="comment" rows="10">
+                        </textarea>
+                        <button class="news-article-form__button">
+                            Post
+                        </button>
+                    </form>
                 </div>
-                <aside class="news-article__aside">
-                    <div class="news-article__aside-block">
+                <aside class="news-article__aside news-article-aside">
+                    <div class="news-article-aside__block">
                         <h2 class="news-article__h2">
                             Search
                         </h2>
@@ -205,41 +301,41 @@
                         </div>
                     </div>
 
-                    <div class="news-article__aside-block">
+                    <div class="news-article-aside__block">
                         <h2>
                             Recent posts
                         </h2>
-                        <div class="news-article__list">
-                            <a href="#" class="news-article__link news-article__link--aside">
+                        <div class="news-article-aside__list">
+                            <a href="#" class="news-article__link news-article-aside__link">
                                 Some title of news article to go on
                             </a>
-                            <a href="#" class="news-article__link news-article__link--aside">
+                            <a href="#" class="news-article__link news-article-aside__link">
                                 Some title of news article to go on
                             </a>
-                            <a href="#" class="news-article__link news-article__link--aside">
+                            <a href="#" class="news-article__link news-article-aside__link">
                                 Some title of news article to go on
                             </a>
-                            <a href="#" class="news-article__link news-article__link--aside">
+                            <a href="#" class="news-article__link news-article-aside__link">
                                 Some title of news article to go on
                             </a>
                         </div>
                     </div>
 
-                    <div class="news-article__aside-block">
+                    <div>
                         <h2>
                             Categories
                         </h2>
-                        <div class="news-article__list">
-                            <a href="#" class="news-article__link news-article__link--aside">
+                        <div class="news-article-aside__list">
+                            <a href="#" class="news-article__link news-article-aside__link">
                                 Category 1
                             </a>
-                            <a href="#" class="news-article__link news-article__link--aside">
+                            <a href="#" class="news-article__link news-article-aside__link">
                                 Category 2
                             </a>
-                            <a href="#" class="news-article__link news-article__link--aside">
+                            <a href="#" class="news-article__link news-article-aside__link">
                                 Category 3
                             </a>
-                            <a href="#" class="news-article__link news-article__link--aside">
+                            <a href="#" class="news-article__link news-article-aside__link">
                                 Category 4
                             </a>
                         </div>

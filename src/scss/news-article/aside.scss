@@ -1,0 +1,21 @@
+.news-article-aside {
+    background: $bg_color_main;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+    &__block {
+        margin: 0 0 128px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__link {
+        font-size: 22px;
+        width: max-content;
+    }
+}
