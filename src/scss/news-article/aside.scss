@@ -6,6 +6,10 @@
 
     &__block {
         margin: 0 0 128px 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 0 0 64px 0;
+        }
     }
 
     &__list {
@@ -16,6 +20,10 @@
 
     &__h2 {
         margin: 0 0 32px 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 0 0 16px 0;
+        }
     }
 
     &__link {

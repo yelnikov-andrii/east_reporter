@@ -58,6 +58,10 @@
         }
     }
 
+    &__span {
+        font-size: 18px;
+    }
+
     &__block {
         display: flex;
         justify-content: space-between;
@@ -93,6 +97,10 @@
     &__pagination {
         &.pagination {
             margin: 0;
+
+            @media screen and (max-width: 1200px) {
+                margin: 32px auto;
+            }
         }
     }
 
