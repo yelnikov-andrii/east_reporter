@@ -8,8 +8,10 @@
     }
 
     &__h1 {
-        font-size: 42px;
+        font-size: 48px;
         font-weight: 700;
+        margin: 0 0 48px 0;
+        font-family: "Pobeda Bold";
     }
 
     &__breadcrumbs {
@@ -27,6 +29,10 @@
         display: block;
         position: relative;
         cursor: pointer;
+        
+        &-article {
+            margin: 0 0 16px 0;
+        }
 
         &::before {
             position: absolute;
@@ -54,11 +60,15 @@
         }
     }
 
+    &__p {
+        margin: 0 0 16px 0;
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 16px;
+        gap: 32px;
         margin: 0 0 32px 0;
 
         @media screen and (max-width: 1024px) {
@@ -93,5 +103,12 @@
         width: 100%;
         min-height: 300px;
         object-fit: cover;
+    }
+
+    &__pagination {
+        &.pagination {
+            margin: 64px 0 0 0;
+        }
+        
     }
 }

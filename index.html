@@ -12,10 +12,10 @@
 <body>
 
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <nav class="header__nav nav">
                 <a class="header__logo" href="index.html">
-                    East Reporter
+                    <img class="header__img" src="./src/images/logo.png" alt="Logo" />
                 </a>
                 <div class="header__toggle">
                     <span class="header__toggle-span"></span>
@@ -123,7 +123,7 @@
 
         <section class="main-top">
             <div class="container top__container">
-                <div class="main-top__search-box search-box">
+                <form class="main-top__search-box search-box">
                     <input type="text" placeholder="Пошук" class="search-box__input" />
                     <button class="search-box__icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             viewBox="0 0 50 50">
@@ -131,264 +131,233 @@
                                 d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
                             </path>
                         </svg></button>
-                </div>
+                </form>
                 <div class="main-top__block">
                     <div class="main-top__banner">
-                        <h2 class="main-top__h2">
-                            Домажир. Порятунок ведмедів
-                        </h2>
-                        <p class="main-top__p">
-                            Дивіться наш репортаж про ведмедів
-                        </p>
-                        <button class="main-top__button">
-                            Переглянути відео
-                        </button>
+                        <iframe class="main-top__iframe"
+                            src="https://www.youtube.com/embed/2_ZgYGLoN0o?si=2Hmeqn7nFYgpGYmJ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="main-top__news">
-                        <div class="main-top__news-card">
+                        <a class="main-top__news-card" href="#">
                             <img src="./src/images/camera.jpg" alt="Camera" class="main-top__news-img" />
-                            <strong>
+                            <h2 class="main-top__link">
                                 Назва новини якась
-                            </strong>
-                        </div>
-                        <div class="main-top__news-card">
+                            </h2>
+                        </a>
+                        <a class="main-top__news-card" href="#">
                             <img src="./src/images/Image.jpg" alt="Camera" class="main-top__news-img" />
-                            <strong>
+                            <h2 class="main-top__link">
                                 Назва новини якась 2
-                            </strong>
-                        </div>
-                        <div class="main-top__news-card">
+                            </h2>
+                        </a>
+                        <a class="main-top__news-card" href="#">
                             <img src="./src/images/bananas.png" alt="Camera" class="main-top__news-img" />
-                            <strong>
+                            <h2 class="main-top__link">
                                 Назва новини якась 3
-                            </strong>
-                        </div>
-                        <div class="main-top__news-card">
+                            </h2>
+                        </a>
+                        <a class="main-top__news-card" href="#">
                             <img src="./src/images/camera.jpg" alt="Camera" class="main-top__news-img" />
-                            <strong>
+                            <h2 class="main-top__link">
                                 Назва новини якась
-                            </strong>
-                        </div>
-                        <div class="main-top__news-card">
+                            </h2>
+                        </a>
+                        <a class="main-top__news-card" href="#">
                             <img src="./src/images/Image.jpg" alt="Camera" class="main-top__news-img" />
-                            <strong>
+                            <h2 class="main-top__link">
                                 Назва новини якась 2
-                            </strong>
-                        </div>
-                        <div class="main-top__news-card">
+                            </h2>
+                        </a>
+                        <a class="main-top__news-card" href="#">
                             <img src="./src/images/bananas.png" alt="Camera" class="main-top__news-img" />
-                            <strong>
+                            <h2 class="main-top__link">
                                 Назва новини якась 3
-                            </strong>
-                        </div>
+                            </h2>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="main-marquee">
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-        </div>
+        <nav class="main-marquee">
+            <ul class="main-marquee__content">
+                <li><a href="#" class="main-marquee__link">Війна</a></li>
+                <li><a href="#" class="main-marquee__link">Екологія</a></li>
+                <li><a href="#" class="main-marquee__link">Мистецтво</a></li>
+            </ul>
+            <ul aria-hidden="true" class="main-marquee__content">
+                <li><a href="#" class="main-marquee__link">Війна</a></li>
+                <li><a href="#" class="main-marquee__link">Екологія</a></li>
+                <li><a href="#" class="main-marquee__link">Мистецтво</a></li>
+            </ul>
+        </nav>
 
         <section class="main-news">
             <div class="container">
                 <h2 class="main-news__title">
-                    Заголовок 1
+                    Екологія
                 </h2>
                 <div class="main-news__block main-news__block--margin">
-                    <div class="main-news__article">
+                    <article class="main-news__article">
                         <img src="./src/images/new1.jpeg" class="main-news__img" />
+                        <h3 class="main-news__h3">
+                            Article's name
+                        </h3>
                         <div class="main-news__description">
                             <p>Category</p>
                             <p>Author</p>
                             <p>Date</p>
                         </div>
-                        <strong>
-                            Article's name
-                        </strong>
-                    </div>
+                    </article>
 
-                    <div class="main-news__article">
+                    <article class="main-news__article">
                         <img src="./src/images/new2.jpg" class="main-news__img" />
+                        <h3 class="main-news__h3">
+                            Article's name
+                        </h3>
                         <div class="main-news__description">
                             <p>Category</p>
                             <p>Author</p>
                             <p>Date</p>
                         </div>
-                        <strong>
-                            Article's name
-                        </strong>
-                    </div>
+                    </article>
 
-                    <div class="main-news__article">
+                    <article class="main-news__article">
                         <img src="./src/images/new3.jpg" class="main-news__img" />
+                        <h3 class="main-news__h3">
+                            Article's name
+                        </h3>
                         <div class="main-news__description">
                             <p>Category</p>
                             <p>Author</p>
                             <p>Date</p>
                         </div>
-                        <strong>
-                            Article's name
-                        </strong>
-                    </div>
+                    </article>
                 </div>
 
                 <h2 class="main-news__title">
-                    Zagolovok 2
+                    Війна
                 </h2>
 
                 <div class="main-news__block main-news__block--margin">
-                    <div class="main-news__article">
+                    <article class="main-news__article">
                         <img src="./src/images/new1.jpeg" class="main-news__img" />
+                        <h3 class="main-news__h3">
+                            Article's name
+                        </h3>
                         <div class="main-news__description">
                             <p>Category</p>
                             <p>Author</p>
                             <p>Date</p>
                         </div>
-                        <strong>
-                            Article's name
-                        </strong>
-                    </div>
+                    </article>
 
-                    <div class="main-news__article">
-                        <img src="./src/images/new2.jpg" class="main-news__img" />
+                    <article class="main-news__article">
+                        <img src="./src/images/new1.jpeg" class="main-news__img" />
+                        <h3 class="main-news__h3">
+                            Article's name
+                        </h3>
                         <div class="main-news__description">
                             <p>Category</p>
                             <p>Author</p>
                             <p>Date</p>
                         </div>
-                        <strong>
-                            Article's name
-                        </strong>
-                    </div>
+                    </article>
 
-                    <div class="main-news__article">
-                        <img src="./src/images/new3.jpg" class="main-news__img" />
+                    <article class="main-news__article">
+                        <img src="./src/images/new1.jpeg" class="main-news__img" />
+                        <h3 class="main-news__h3">
+                            Article's name
+                        </h3>
                         <div class="main-news__description">
                             <p>Category</p>
                             <p>Author</p>
                             <p>Date</p>
                         </div>
-                        <strong>
-                            Article's name
-                        </strong>
-                    </div>
+                    </article>
                 </div>
 
                 <h2 class="main-news__title">
-                    Zagolovok 3
+                    Мистецтво
                 </h2>
 
-                <div class="main-news__block">
-                    <div class="main-news__article">
+                <div class="main-news__block main-news__block--margin">
+                    <article class="main-news__article">
                         <img src="./src/images/new1.jpeg" class="main-news__img" />
+                        <h3 class="main-news__h3">
+                            Article's name
+                        </h3>
                         <div class="main-news__description">
                             <p>Category</p>
                             <p>Author</p>
                             <p>Date</p>
                         </div>
-                        <strong>
-                            Article's name
-                        </strong>
-                    </div>
+                    </article>
 
-                    <div class="main-news__article">
-                        <img src="./src/images/new2.jpg" class="main-news__img" />
+                    <article class="main-news__article">
+                        <img src="./src/images/new1.jpeg" class="main-news__img" />
+                        <h3 class="main-news__h3">
+                            Article's name
+                        </h3>
                         <div class="main-news__description">
                             <p>Category</p>
                             <p>Author</p>
                             <p>Date</p>
                         </div>
-                        <strong>
-                            Article's name
-                        </strong>
-                    </div>
+                    </article>
 
-                    <div class="main-news__article">
-                        <img src="./src/images/new3.jpg" class="main-news__img" />
+                    <article class="main-news__article">
+                        <img src="./src/images/new1.jpeg" class="main-news__img" />
+                        <h3 class="main-news__h3">
+                            Article's name
+                        </h3>
                         <div class="main-news__description">
                             <p>Category</p>
                             <p>Author</p>
                             <p>Date</p>
                         </div>
-                        <strong>
-                            Article's name
-                        </strong>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <div class="main-marquee">
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-            <p>Это пример бегущей строки, которая будет прокручиваться.</p>
-        </div>
+        <nav class="main-marquee">
+            <ul class="main-marquee__content">
+                <li><a href="#" class="main-marquee__link">Війна</a></li>
+                <li><a href="#" class="main-marquee__link">Екологія</a></li>
+                <li><a href="#" class="main-marquee__link">Мистецтво</a></li>
+            </ul>
+            <ul aria-hidden="true" class="main-marquee__content">
+                <li><a href="#" class="main-marquee__link">Війна</a></li>
+                <li><a href="#" class="main-marquee__link">Екологія</a></li>
+                <li><a href="#" class="main-marquee__link">Мистецтво</a></li>
+            </ul>
+        </nav>
 
         <section class="main-important">
             <div class="container main-important__block">
                 <aside class="main-important__aside">
                     <div>
                         <h2 class="main-important__title">
-                            Важливе
+                            Новини
                         </h2>
                         <ul class="main-important__list">
                             <li>
-                                <a class="main-important__link">
-                                    Конфлікти
+                                <a class="main-important__link" href="#">
+                                    Війна
                                 </a>
                             </li>
                             <li>
-                                <a class="main-important__link">
-                                    Терроризм
+                                <a class="main-important__link" href="#">
+                                    Екологія
                                 </a>
                             </li>
                             <li>
-                                <a class="main-important__link">
-                                    Релігія
-                                </a>
-                            </li>
-                            <li>
-                                <a class="main-important__link">
-                                    Скандали
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="main-important__title">
-                            Політика
-                        </h2>
-                        <ul class="main-important__list">
-                            <li>
-                                <a class="main-important__link">
-                                    Зовнішня політика
-                                </a>
-                            </li>
-                            <li>
-                                <a class="main-important__link">
-                                    Внутрішня політика
-                                </a>
-                            </li>
-                            <li>
-                                <a class="main-important__link">
-                                    Нові закони
+                                <a class="main-important__link" href="#">
+                                    Мистецтво
                                 </a>
                             </li>
                         </ul>

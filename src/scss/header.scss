@@ -1,19 +1,18 @@
 .header {
     padding: 10px 0;
-    border-bottom: 2px solid $txt_color;
-    font-family: "Pobeda", sans-serif;
+    font-family: "Pobeda";
     position: relative;
     height: 60px;
     background: $bg_color_main;
+    display: flex;
+    align-items: center;
 
     &__logo {
-        font-size: 28px;
-        font-weight: 600;
-        text-decoration: none;
-        color: $txt_color;
+        width: 140px;
+        height: auto;
 
-        @media screen and (max-width: 1024px) {
-            font-size: 24px;
+        img {
+            width: 100%;
         }
     }
 
@@ -54,6 +53,10 @@
                 transition: all 0.4s ease;
             }
         }
+    }
+
+    &__container {
+        width: 100%;
     }
 }
 
@@ -102,12 +105,12 @@
                 .header-list__svg.header-list__svg--plus {
                     display: none;
                 }
-    
+
                 .header-list__svg.header-list__svg--minus {
                     display: inline-block;
                 }
             }
-    
+
             .header-list__svg.header-list__svg--minus {
                 display: none;
             }
@@ -160,7 +163,7 @@
 
 
     &__link {
-        font-size: 22px;
+        font-size: 30px;
         font-weight: 600;
         color: $txt_color;
         text-decoration: none;
@@ -168,13 +171,14 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        transition: color 0.4s ease;
 
         &:hover {
             color: $header_hover_color;
         }
 
         @media screen and (max-width: 1024px) {
-            font-size: 20px;
+            font-size: 28px;
             justify-content: center;
         }
     }

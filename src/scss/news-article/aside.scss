@@ -14,12 +14,12 @@
         gap: 16px;
     }
 
+    &__h2 {
+        margin: 0 0 32px 0;
+    }
+
     &__link {
         font-size: 22px;
-        width: max-content;
-
-        @media screen and (max-width: 1200px) {
-            width: fit-content;
-        }
+        width: fit-content;
     }
 }

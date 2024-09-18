@@ -1,5 +1,6 @@
 
 @import './fonts.scss';
+@import './reset.scss';
 @import './vars.scss';
 @import './header.scss';
 @import './main/main.scss';
@@ -9,25 +10,10 @@
 @import './news-article/news-article.scss';
 @import './search-box.scss';
 @import './pagination.scss';
-
-body {
-    margin: 0;
-    font-family: 'Racama sans-serif';
-    color: $txt_color;
-    background: $bg_color_main;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-a {
-    color: $txt_color;
-    text-decoration: none;
-}
+@import './scrollbar.scss';
 
 .container {
-    max-width: 1370px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 30px;
 
