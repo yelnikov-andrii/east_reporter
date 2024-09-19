@@ -6,6 +6,7 @@
 .news-article {
     padding: 32px 0 64px;
     background: $bg_color_secondary;
+    // font-family: 'Racama';
 
     &__container {
         &.container {
@@ -81,6 +82,17 @@
         margin: 0 0 32px 0;
     }
 
+    &__meta {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin: 0 0 32px 0;
+    }
+
+    &__span {
+        color: $link_color;
+    }
+
     &__nav {
         margin: 0 0 64px 0;
     }
@@ -106,16 +118,23 @@
         object-fit: contain;
     }
 
-    &__p {
-        font-size: 22px;
+    &__content {
+        font-size: 18px;
+        font-family: 'Racama';
+
+        p {
+            margin: 16px 0;
+        }
+
+        em {
+            color: $link_color;
+        }
     }
 
     &__aside {
         width: 30%;
         min-height: 100vh;
         height: fit-content;
-        position: sticky;
-        top: 0;
 
         @media screen and (max-width: 1024px) {
             width: 100%;
