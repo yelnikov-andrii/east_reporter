@@ -59,10 +59,12 @@
 
         a {
             position: relative;
+            padding: 8px 0;
+            display: inline-block;
 
             &::before {
                 position: absolute;
-                bottom: -4px;
+                bottom: 4px;
                 content: '';
                 left: 0;
                 right: 100%;
@@ -76,7 +78,7 @@
     
                 &::before {
                     position: absolute;
-                    bottom: -4px;
+                    bottom: 4px;
                     content: '';
                     left: 0;
                     right: 0;
